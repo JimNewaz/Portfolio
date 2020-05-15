@@ -1,0 +1,290 @@
+body{
+    
+    background: linear-gradient(90deg, #2d2d2d , black );
+    
+}
+
+.nav{
+    margin: 0;
+    height: 20px;
+    text-align: center;
+
+}
+
+.nav ul {
+  
+  padding: 0;
+  display: flex;
+  text-align: center;
+  margin-left: 17%;
+  width: 100%;
+  margin-top: 10px;
+}
+ul li {
+  display: inline;
+  list-style: none;
+  padding: 10px ;
+  text-align: center;
+  
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: tomato;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+}
+ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+ul li a span:first-child:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:first-child:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+
+ul li a span:last-child:before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:last-child:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0; 
+}
+ul li a:hover span:first-child:before {
+  top: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:first-child:after {
+  top: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+ul li a:hover span:last-child:before {
+  bottom: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:last-child:after {
+  bottom: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+.separator {
+  margin-top: 57px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.separator--line {
+  border: 0;
+  border-bottom: 5px solid tomato;
+  width: 0;
+  -webkit-animation: separator-width 1s ease-out forwards;
+          animation: separator-width 1s ease-out forwards;
+}
+
+@-webkit-keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.s{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 1rem;
+    
+}
+
+
+
+
+
+.container {
+  position: absolute;
+  height: 500px;
+  width: 800px;
+  top: 300px;
+  left: 250px;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 50px;
+}
+.tt{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 45px;
+}
+.tt1{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 45px;
+}
+
+.tt2{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 37px;
+}
+.tt3{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 70px;
+
+}
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, white, tomato 100%);
+  transition: 0.6s ease-out;
+  margin-top: 15px;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle{
+  color: rgb(183, 226, 247);
+  text-align: left;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.copy{
+  
+  color: #444343;
+  height: 50px;
+  width: max-content;
+  margin-top: 640px;
+  text-align: center;
+  margin-left: 450px;
+}

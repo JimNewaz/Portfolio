@@ -1,0 +1,475 @@
+body{
+    
+    background: linear-gradient(90deg, #2d2d2d , black );
+}
+
+.nav{
+    margin: 0;
+    height: 20px;
+    text-align: center;
+
+}
+
+.nav ul {
+  
+  padding: 0;
+  display: flex;
+  text-align: center;
+  margin-left: 17%;
+  width: 100%;
+  margin-top: 10px;
+}
+ul li {
+  display: inline;
+  list-style: none;
+  padding: 10px ;
+  text-align: center;
+  
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: tomato;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+}
+ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+ul li a span:first-child:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:first-child:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+
+ul li a span:last-child:before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:last-child:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0; 
+}
+ul li a:hover span:first-child:before {
+  top: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:first-child:after {
+  top: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+ul li a:hover span:last-child:before {
+  bottom: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:last-child:after {
+  bottom: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+.separator {
+  margin-top: 57px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.separator--line {
+  border: 0;
+  border-bottom: 5px solid tomato;
+  width: 0;
+  -webkit-animation: separator-width 1s ease-out forwards;
+          animation: separator-width 1s ease-out forwards;
+}
+
+@-webkit-keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.s{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 1rem;
+    
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.hexagons {
+  width: max-content;
+  letter-spacing: 0;
+  font-size: 0;
+  margin-top: 130px;
+  
+}
+.hexagon-holder1{
+  position: relative;
+  
+  width: 226px;
+  height: 130.48px;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 0;
+}
+.hexagon-holder2{
+  position: relative;
+  
+  width: 226px;
+  height: 130.48px;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 0;
+}
+.hexagon-holder3{
+  position: relative;
+  
+  width: 226px;
+  height: 130.48px;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 0;
+}
+.hexagon-holder {
+  position: relative;
+  margin-left: 180px;
+  width: 226px;
+  height: 130.48px;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 0;
+
+}
+.hexagon {
+  position: relative;
+  width: 226px;
+  height: 130.48px;
+  
+  background-size: auto 258.6529px;
+  background-position: center;
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+  display: inline-block;
+  z-index: 1;
+}
+.hexagon .hexTop,
+.hexagon .hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 159.81px;
+  height: 159.81px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 32.10px;
+  -webkit-backface-visibility: hidden
+}
+/*counter transform the bg image on the caps*/
+
+.hexagon .hexTop:after,
+.hexagon .hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 224.0000px;
+  height: 129.32646029847618px;
+  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-64.6632px);
+  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-64.6632px);
+  transform: rotate(45deg) scaleY(1.7321) translateY(-64.6632px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+.hexagon .hexTop {
+  top: -79.9031px;
+  border-top: solid 10px tomato;
+  border-right: solid 10px tomato;
+}
+.hexagon .hexTop:after {
+  background-position: center top;
+}
+.hexagon .hexBottom {
+  bottom: -79.9031px;
+  border-bottom: solid 10px tomato;
+  border-left: solid 10px tomato;
+}
+.hexagon .hexBottom:after {
+  background-position: center bottom;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.5774px;
+  left: 0;
+  width: 224.0000px;
+  height: 129.3265px;
+  z-index: 2;
+  background: inherit;
+}
+.hexagon:nth-child(7n-2) {
+  margin-left: 156px;
+}
+.hexagon:nth-child(n+5) {
+  margin-top: 29px;
+}
+.hexText {
+  position: absolute;
+  margin-top: 2px;
+  text-align: center;  
+  z-index: 3;
+  font-size: 15px;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  margin-left: 0.5rem;
+  
+  
+}
+/* entire container, keeps perspective */
+
+.flip-container {
+  perspective: 1000;
+  transform-style: preserve-3d;
+  width: 226px;
+  height: 280.48px !important;
+  background: transparent;
+}
+/*  UPDATED! flip the pane when hovered */
+
+.flip-container:hover .back {
+  transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+  transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+  width: 226px;
+  height: auto;
+}
+/* flip speed goes here */
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  top: 75px;
+}
+/* hide back of pane during swap */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*  UPDATED! front pane, placed above back */
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+
+.back {
+  transform: rotateY(-180deg);
+}
+/* 
+	Some vertical flip updates 
+*/
+
+.vertical.flip-container {
+  position: relative;
+}
+.vertical .back {
+  transform: rotateX(180deg);
+}
+.vertical.flip-container:hover .back {
+  transform: rotateX(0deg);
+}
+.vertical.flip-container:hover .front {
+  transform: rotateX(180deg);
+}
+.hexagon-overlay {
+  position: absolute;
+  width: 226px;
+  height: 130.48px;
+  margin: 0;
+  background-color: #2e3033;
+  background-size: auto 247.1059px;
+  background-position: center;
+  border-left: solid 6px #333333;
+  border-right: solid 6px #333333;
+  opacity: .7;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+.hexagon-overlay .hexTop,
+.hexagon-overlay .hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 159.81px;
+  height: 159.81px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 27.10px;
+}
+/*counter transform the bg image on the caps*/
+
+.hexagon-overlay .hexTop:after,
+.hexagon-overlay .hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 214.0000px;
+  height: 123.55295760657991px;
+  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-61.7765px);
+  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-61.7765px);
+  transform: rotate(45deg) scaleY(1.7321) translateY(-61.7765px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+.hexagon-overlay .hexTop {
+  top: -79.9031px;
+  border-top: solid 8.4853px #333333;
+  border-right: solid 8.4853px #333333;
+}
+.hexagon-overlay .hexTop:after {
+  background-position: center top;
+}
+.hexagon-overlay .hexBottom {
+  bottom: -79.9031px;
+  border-bottom: solid 8.4853px #333333;
+  border-left: solid 8.4853px #333333;
+}
+.hexagon-overlay .hexBottom:after {
+  background-position: center bottom;
+}
+.hexagon-overlay .hexagon:after {
+  content: "";
+  position: absolute;
+  top: 3.4641px;
+  left: 0;
+  width: 214.0000px;
+  height: 123.5530px;
+  z-index: 2;
+  background: inherit;
+}
+
+.tt{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: 90px;
+}
+
+.title {
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 40px;
+}
+
+.titlee {
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 70px;
+}
+
+.title1 {
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 25px;
+}
+.ti{
+  color: tomato;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  left: 60px;
+}

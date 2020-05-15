@@ -1,0 +1,345 @@
+body{
+    
+    background: linear-gradient(90deg, #2d2d2d , black );
+    
+}
+
+.nav{
+    margin: 0;
+    height: 20px;
+    text-align: center;
+
+}
+
+.button {
+    color: #EE6118;
+}
+
+.text{
+    margin-top: 250px;
+    float: left;
+    padding-left: 50px;
+    font-size: 100px;
+
+    width: 100%;    
+}
+.t{
+    left: 8%;
+    margin-top: -5%;
+    padding: 2px;
+}
+h1 {
+    margin-top: -5%;
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-left: 12%;
+    left: 22%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    color: #cfcfcf;
+    letter-spacing: 0.1rem;
+  }
+  h1:before {
+    
+    content: attr(data-heading);
+    position: -webkit-sticky;
+    overflow: hidden;
+    color: #EE6118;
+    width: 100%;
+    z-index: 5;
+    text-shadow: none;
+    left: 50%;
+    text-align: left;
+    -webkit-animation: flicker 3s linear infinite;
+            animation: flicker 3s linear infinite;
+  }
+  
+  @-webkit-keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+      text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.4;
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+      text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.4;
+      text-shadow: none;
+    }
+  }
+  /*
+   * Webfont: CoreCircus by S-Core
+   * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+   * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+   * Licensed pageviews: 10,000
+  *
+   * Webfont: CoreCircus2DDot1 by S-Core
+   * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+   * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+   * Licensed pageviews: 10,000
+  */
+  @font-face {
+    font-family: 'CoreCircus2DDot1';
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'CoreCircus';
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf") format("truetype");
+  }
+  
+  .p{
+    color: #99ADA7;
+    
+    font-size: 45px;
+    padding: 2px ;
+    margin: 0 auto;
+    margin-left: 4.5%;
+    
+  }
+ 
+  .t1{
+    font-size: 25px;
+    color: rgb(255, 248, 248);
+    margin-top: 25px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+  }
+  .g{
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  .t1 a{
+    color: tomato;
+  }
+  .t1 a:hover{
+    color: tomato;
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  margin-left: 80%;
+  margin-top: 20%;
+  
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: tomato;
+}
+button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+  
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid tomato;
+  border-right: 0.125rem solid tomato;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: tomato;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+.button-text a{
+  text-decoration: none;
+  color: #282936;
+}
+
+
+ul {
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  margin-left: 17%;
+}
+ul li {
+  list-style: none;
+  padding: 10px ;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: tomato;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+}
+ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+ul li a span:first-child:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:first-child:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+
+ul li a span:last-child:before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0;
+}
+ul li a span:last-child:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: .2s;
+  opacity: 0; 
+}
+ul li a:hover span:first-child:before {
+  top: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:first-child:after {
+  top: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+ul li a:hover span:last-child:before {
+  bottom: -10px;
+  left: -10px;
+  opacity: 1;
+}
+ul li a:hover span:last-child:after {
+  bottom: -10px;
+  right: -10px;
+  opacity: 1;
+}
+
+.copy{
+  
+  color: #444343;
+  height: 50px;
+  width: max-content;
+  margin-top: -5px;
+  text-align: center;
+  margin-left: 450px;
+}
